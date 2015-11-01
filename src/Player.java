@@ -1,3 +1,11 @@
+/***
+ * An interface all players must implement.  It provides a method getMove() that returns the player's
+ * desired move.  It also gives a method setOutcome(...) that allows the player to store information
+ * about the previous game to use in future decisions.
+ * 
+ * @author David
+ *
+ */
 public interface Player {
 
 	// return your player's move.  The value should be one of

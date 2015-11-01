@@ -1,4 +1,10 @@
-
+/***
+ * This player will always play whatever would have beat the previous
+ * move of the opponent.
+ * 
+ * @author David
+ *
+ */
 public class BeatLastMovePlayer implements Player {
 	int opponentLastMove;
 	

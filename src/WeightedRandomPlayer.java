@@ -1,4 +1,9 @@
-
+/***
+ * This player has a fixed probability for each type of move.
+ * 
+ * @author David
+ *
+ */
 public class WeightedRandomPlayer implements Player {
 	private double prock, ppaper;
 	

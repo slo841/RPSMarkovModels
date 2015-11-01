@@ -1,4 +1,10 @@
-
+/***
+ * This player starts by playing rock.  They will continue to play that until they are beat.
+ * They will then switch to whatever would have beat the opponents last throw.
+ * 
+ * @author David
+ *
+ */
 public class StayIfWinSwitchIfLosePlayer implements Player {
 	int prevMove;
 	

@@ -1,4 +1,9 @@
-
+/***
+ * This player moves at random with equal probability of each move.
+ * 
+ * @author David
+ *
+ */
 public class RandomPlayer implements Player {
 
 	public RandomPlayer() {
