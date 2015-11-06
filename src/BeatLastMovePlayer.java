@@ -24,7 +24,7 @@ public class BeatLastMovePlayer implements Player {
 	}
 
 	@Override
-	public void setOutcome(int yourMove, int opponentMove, int outcome) {
+	public void updateLastRoundInfo(int yourMove, int opponentMove, int outcome) {
 		opponentLastMove = opponentMove;
 	}
 

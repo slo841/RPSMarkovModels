@@ -17,5 +17,5 @@ public interface Player {
 	//
 	// yourMove and opponentMove will both be one of:  RPS.ROCK, RPS.PAPER, or RPS.SCISSORS
 	// outcome will be:  RPS.YOU, RPS.OPPONENT, or RPS.TIE
-	public void setOutcome(int yourMove, int opponentMove, int outcome);
+	public void updateLastRoundInfo(int yourMove, int opponentMove, int outcome);
 }

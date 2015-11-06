@@ -21,7 +21,7 @@ public class WeightedRandomPlayer implements Player {
 	}
 
 	@Override
-	public void setOutcome(int yourMove, int opponentMove, int outcome) {
+	public void updateLastRoundInfo(int yourMove, int opponentMove, int outcome) {
 		// we don't do anything with the outcome
 	}
 
