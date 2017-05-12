@@ -4,9 +4,12 @@ public class RunMe {
 	public static void main(String[] args) {
 		RPS game = new RPS(); 							// create the game object
 
-		Player p1 = new WeightedRandomPlayer(.7, .2); 	// create two players
-		Player p2 = new BeatLastMovePlayer();
+//		Player p1 = new WeightedRandomPlayer(.7, .2); 	// create two players
+//		Player p2 = new BeatLastMovePlayer();
 
+		Player p1 = new OpponentLastMovePlayerMahima();
+		Player p2 = new BeatLastWinningMovePlayer();
+		
 		for (int i = 0; i < TOTAL_GAMES; i++) { 	// play many games together
 			int p1move = p1.getMove(); 				// get the moves from the players
 			int p2move = p2.getMove();

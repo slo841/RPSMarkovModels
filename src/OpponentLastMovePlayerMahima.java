@@ -2,8 +2,8 @@
 public class OpponentLastMovePlayerMahima implements Player {
 	private int opponentLastMove;
 	
-	public OpponentLastMovePlayerMahima(HumanPlayer p) {
-		opponentLastMove = p.getMove();
+	public OpponentLastMovePlayerMahima() {
+		
 	}
 	
 	public int getMove() {
