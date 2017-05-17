@@ -11,11 +11,16 @@ public class MarkovPlayer implements Player {
 	
 	@Override
 	public int getMove() {
-		double rand = Math.random();
+		double total = predictMove[opponentLastMove][RPS.ROCK] 
+				+ predictMove[opponentLastMove][RPS.PAPER] 
+						+ predictMove[opponentLastMove][RPS.SCISSORS];
+		
+		double rand = (Math.random()*total);
 
-		if (rand >= 0 && rand < predictMove[opponentLastMove][0]) {
+		if (rand >= 0 && rand < ((double) predictMove[opponentLastMove][RPS.ROCK] / total)) {
 			return RPS.PAPER;
-		} else if (rand >= predictMove[opponentLastMove][0] && rand < predictMove[opponentLastMove][1] + predictMove[opponentLastMove][0]) {
+		} else if (rand >= ((double) predictMove[opponentLastMove][RPS.ROCK] / total) && 
+				rand < ((double) predictMove[opponentLastMove][RPS.PAPER] + predictMove[opponentLastMove][RPS.ROCK]) / total) {
 			return RPS.SCISSORS;
 		} else {
 			return RPS.ROCK;
